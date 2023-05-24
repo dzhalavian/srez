@@ -1,0 +1,78 @@
+body {
+    font-family: Roboto, sans;
+}
+.nav-link{
+    font-size: larger;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/main.jpeg);
+    background-size: cover;
+    position: relative;
+}
+#hero::before {
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#hero .container {
+    position: relative;
+    padding-top: 75px;
+}
+#hero h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+#hero h2 {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    color: #fff;
+
+}
+.carousel-caption{
+    color: black;
+}
+#map {
+    width: 100%;
+    height: 100vh;
+    background: url(../img/map.jpg);
+    background-size: cover;
+    position: relative;
+}
+#map::before {
+    content: "";
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#map .container {
+    position: relative;
+    padding-top: 75px;
+}
+#map h1 {
+    margin: 0;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 64px;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+}
+#map h2 {
+    margin: 10px 0 0 0;
+    font-size: 24px;
+    color: #fff;
+
+}

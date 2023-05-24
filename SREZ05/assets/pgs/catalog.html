@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music House</title>
+    <!---Bootstrap CSS-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!---Main CSS-->
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../../index.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pgs/catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pgs/place.html">Где нас найти?</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input class="form-control mx-2" type="search" placeholder="Поиск" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Найти</button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Корзина</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#AuthModal">Авторизация</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!--/NavBar-->
+
+    <!--MainImage-->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+              <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-light">Наши товары</h1>
+                <p class="lead text-muted">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam ratione debitis minus obcaecati.</p>
+              </div>
+            </div>
+        </div>
+    </section>
+    <!--/MainImage-->
+
+    <!--Catalog-->
+    <div class="album py-5 bg-light">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="../img/clavishi1.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar2.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar3.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar4.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/clavishi1.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar1.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar5.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/clavishi3.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar7.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar8.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar9.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar10.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar11.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar12.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/clavishi4.png" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/guitar13.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/main.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-sm">
+                  <img src="../img/clavishi5.jpeg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet temporibus nemo, atque, sit qui, nam fuga sequi dolorem nisi inventore veniam pariatur consequatur deserunt debitis? Eligendi delectus molestias distinctio placeat?</p>
+                    <div class="d-flex justify-content-between align-items-center">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary">В корзину</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary">Купить</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    <!--/Catalog-->
+
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="../../index.html" class="nav-link px-2 text-muted">О нас</a></li>
+            <li class="nav-item"><a href="../pgs/catalog.html" class="nav-link px-2 text-muted">Каталог</a></li>
+            <li class="nav-item"><a href="../pgs/place.html" class="nav-link px-2 text-muted">Где нас найти</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 Dzhalavian, Inc</p>
+        </footer>
+      </div>
+    <!--/Footer-->
+
+
+
+
+    <!---Bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!---Main JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

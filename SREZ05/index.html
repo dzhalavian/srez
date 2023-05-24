@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music House</title>
+    <!---Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!---Main CSS-->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+<body>
+    <!--NavBar-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+          
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="assets/pgs/catalog.html">Каталог</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="assets/pgs/place.html">Где нас найти?</a>
+              </li>
+            </ul>
+            <form class="d-flex me-auto" role="search">
+              <input class="form-control mx-2" type="search" placeholder="Поиск" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Найти</button>
+            </form>
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Корзина</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn btn-outline-success" type="button" data-bs-toggle="modal" data-bs-target="#AuthModal">Авторизация</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+    <!--/NavBar-->
+
+    <!--ModalAuth-->
+    <div class="modal fade" id="AuthModal" tabindex="-1" aria-labelledby="AuthModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="AuthModalLabel">Авторизация</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <p>Еще не зарегистрированы?</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RegModal">Регистрация</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!--/ModalAuth-->
+
+    <!--ModalReg-->
+    <div class="modal fade" id="RegModal" tabindex="-1" aria-labelledby="RegModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="RegModalLabel">Регистрация</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                      <label for="exampleInputEmail1" class="form-label">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputLogin" class="form-label">Login</label>
+                        <input type="login" class="form-control" id="exampleInputLogin">
+                      </div>
+                    <div class="mb-3">
+                      <label for="exampleInputPassword1" class="form-label">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">RepeatPassword</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                      </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Регистрация</button>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <p>Уже есть аккаунт?</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AuthModal">Войти</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--/ModalReg-->
+
+    <!--MainImage-->
+    <section id="hero" class="d-flex align-items-center justify-content-center">
+        <div class="container text-center">
+            <div class="row justify-content-center">
+                <div class="col-md-6 col-lg-8">
+                    <h1 class="brand">Music House</h1>
+                    <h2 class="deviz">Музыка спасет мир</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/MainImage-->
+
+    <!--Carousel-->
+    <section class="about my-5" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="assets/img/clavishi1.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Метка первого слайда</h5>
+                              <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/guitar2.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Метка второго слайда</h5>
+                              <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/clavishi2.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Метка третьего слайда</h5>
+                              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/guitar3.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Метка четвертого слайда</h5>
+                              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <img src="assets/img/guitar4.jpeg" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                              <h5>Метка пятого слайда</h5>
+                              <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Предыдущий</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Следующий</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pt-lg-0 order-2 order-lg-1 content">
+                    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, adipisci.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/Carousel-->
+
+    <!--Footer-->
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">О нас</a></li>
+            <li class="nav-item"><a href="assets/catalog.html" class="nav-link px-2 text-muted">Каталог</a></li>
+            <li class="nav-item"><a href="assets/place.html" class="nav-link px-2 text-muted">Где нас найти</a></li>
+          </ul>
+          <p class="text-center text-muted">© 2023 Dzhalavian, Inc</p>
+        </footer>
+      </div>
+    <!--/Footer-->
+
+
+
+
+    <!---Bootstrap JS-->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!---Main JS-->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
